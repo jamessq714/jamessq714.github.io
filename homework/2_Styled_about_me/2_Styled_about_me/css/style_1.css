@@ -1,0 +1,29 @@
+body{
+	font-family: Verdana, sans-serif, arial;
+	color: white;
+	letter-spacing: .3em;
+	font-size: 40px;
+	background-color: #3AB7E8;
+	background-image: url('background.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+
+section{
+	color: orange;
+	font-size: 22px;
+}
+
+head, body{
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: red;
+}
+
+img{
+	padding: 20px;
+}
