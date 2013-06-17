@@ -1,0 +1,163 @@
+
+/* apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body{
+	background-color: #EAE9DC;
+}
+
+.top{
+	width: 650px;
+	height: 160px;
+	margin: 30px auto;
+	background-color: #39C0CE;
+	border-radius: 5px;
+	overflow: hidden;
+
+}
+
+.top .logo{
+	width: 646px;
+	height: 120px;
+	margin: 0px auto;
+	background-color: #8DD7E0;
+	border-radius: 5px;
+	border-top: 2px solid #39c0ce;
+	text-align: center;
+	padding: 20px 0 20px 0;
+	background-image: url(../images/dots.png);
+}
+
+
+
+.top .link_list{
+	overflow: hidden;
+	width: 650px;
+}
+
+.top .link_list .link{
+	width:130px;
+	float: left;
+	margin: 12px auto;
+	text-align: center;
+}
+
+.top .link_list .link p{
+	color: #068995;
+	font-size: 15px;
+	font-family: "arial";
+
+}
+
+
+
+
+
+.mid{
+	width: 650px;
+	font-size: 30px;
+	margin: 10px auto;
+	text-align: left;
+}
+
+.mid h1{
+	font-weight: normal;
+	color: #4F361D;
+}
+
+
+
+
+
+.bottom{
+	overflow: hidden;
+	width: 650px;
+	margin: 20px auto;
+
+}
+
+.bottom .left_side{
+	width: 380px;
+	float: left;
+}
+
+.bottom .left_side .pic{
+	padding: 10px;
+	background-color: white;
+	}
+
+.bottom .left_side .text{
+	margin-top: 20px;
+	color: #4F361D;
+
+}
+
+
+
+
+.bottom .right_side{
+	background-color: #DDDAC5;
+	width: 250px;
+	float: right;
+	overflow: hidden;
+}
+
+
+.bottom .right_side h2{
+	margin: 10px auto;
+	display: block;
+	margin: 10px auto;
+	width: 230px;
+	color:#4F361D;
+
+
+}
+
+
+.bottom .right_side .comments{
+	width:230px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+
+.bottom .right_side .comments .review{
+	float: left;
+	margin: 10px auto;
+
+}
+
+
+.bottom .right_side .comments .customer .review .box{
+	width:175px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 3px black;
+	margin-left: 10px;
+	margin-right: -10px;
+	min-height: 36px;
+}
+
+
+.bottom .right_side .comments .customer .review .box p{
+	padding: 10px;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: arial;
+	color: #4F361D;
+}
+
+
+
+
+.bottom .right_side .squares{
+	overflow: hidden;
+}
+
+.bottom .right_side .squares .pic{
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	background-color: white;
+	float: left;
+}
