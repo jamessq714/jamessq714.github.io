@@ -37,7 +37,7 @@ p {
 
 header{
   background-color: #FF7700;
-  height: 165px;
+  height: 130px;
   overflow: hidden;
 }
 
@@ -46,6 +46,7 @@ header{
   width: 100%;
   height: 60px; 
   padding-top: 5px;
+  position: relative;
 }
 
 .added_info .entry{
@@ -88,7 +89,7 @@ nav{
   margin: 0 60px;
   overflow: hidden;
   width: 1000px;
-  padding: 25px 0 5px 0;
+  padding: 15px 0 5px 0;
 }
 
 nav ul{
@@ -98,19 +99,18 @@ nav ul{
 
 nav ul li a{
   float:left;
-  width: 130px;
+  width: 145px;
   text-align: center;
   margin: 15px;
   margin-top: 0;
-  padding: 15px;
+  padding: 7px;
   cursor: pointer;
-  border: 4px solid rgba(0, 0, 0, .5);
+  border: 5px solid rgba(255, 255, 255, .2);
   border-radius: 5px;
   box-shadow: 1px solid rgba(0, 0, 0, 0.5), 0  0  0  1px rgba(0, 0, 0, 0.2);
   font-weight: bold; 
-  font-size: 18px;
-  background-color: #f3a561;
-  color: black;
+  font-size: 20px;
+  color: rgba(0,0,0,.7);
   text-decoration:none;
 }
 
@@ -119,12 +119,12 @@ li a:first-child{
 }
 
 nav ul li a:hover{
-  border: 5px solid #718D58;
-  transition: all .3s ease-in;
+  border-color: #718D58;
+  transition: all .5s ease-in;
 }
 nav ul li a.active{
   background-color: #718D58;
-  
+  border: 5px solid #718D58;  
 }
 
 
@@ -156,17 +156,65 @@ nav ul li a.active{
 
 .container .pics{
   margin: 20px 0;
-  overflow: hidden;
-  height: 400px;
+  height: 430px;
   width: auto;
 }
+
+
+.als-container {
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  z-index: 0;
+}
+
+.als-viewport {
+  position: relative;
+  overflow: hidden;
+  margin: 0px auto;
+}
+
+.als-wrapper {
+  position: relative;
+  /* if you are using a list with <ul> <li> */
+  list-style: none;
+}
+
+.als-item {
+  position: relative;
+  display: block;
+  text-align: center;
+/*  cursor: pointer;
+*/  float: left;
+}
+
+.als-prev, .als-next {
+  position: absolute;
+  cursor: pointer;
+  clear: both;
+  top: 200px;
+}
+
+.als-next{
+  right: 0;
+}
+
+.als-prev{
+  left: 0;
+}
+
+
+
+
+
+
 
 .container .poloroid{
   float: left;
   margin: 15px;
   box-shadow: 0 2px 2px rgba(0,0,0,0.5);
   width: 340px; 
-  height: 400px;
+  height: 385px;
   background-color: white;
   padding: 20px 20px 80px 20px;
 }

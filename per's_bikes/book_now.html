@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,6 +6,10 @@
     <title>Per's Bike Tours SF</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
+    <meta name"description" content="Per's Bike Tours is a customer oriented company providing guided tours in San Francisco. Choose your tour with confidence knowing that you are about to have a great day in the Bay Area!">
+    <meta name="keywords" content="bike, tour, ride, cycling, bicycle, tours, San Francisco, Bay Area, Marin, Sausalito, Golden Gate, Park, riding, countryside, tourist, vacation, summer, spring, fall, bikes, Per, pear, rides, rental, SF, san fran, CA, California, san fransisco">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
@@ -16,44 +21,61 @@
       <div class="first_header">
         <div class="added_info">
           <div class=" entry translate">
-            <div class="flag"> 
-              <img src="images/american_flag.jpg" height="35px" width="68px" >
+            <div class="flag" data-lang="eng"> 
+              <img  src="images/american_flag.jpg" height="35px" width="68px" >
             </div>
-            <div class="flag"> 
-              <img src="images/sweden.gif" height="35px" width="68px">
+            <div class="flag" data-lang="swe"> 
+              <img  src="images/sweden.gif" height="35px" width="68px">
             </div>
-            <div class="flag">
-              <img src="images/italy.jpg" height="35px" width="68px">
+            <div class="flag" data-lang="ity">
+              <img  src="images/italy.jpg" height="35px" width="68px">
             </div>
           </div>
-          <div class="entry quick_contact"> Give us a call! (415)955-7699 
+          <div data-translate_key="quick_contact" class="entry quick_contact"> Give us a call! (415)955-7699 
           </div>
         </div>
       </div>
 
       <nav>
         <ul>
-          <li> <a href="home.html"> Home </a> </li>
-          <li> <a href="about.html">About</a> </li>
-          <li> <a href="tours.html">Tours</a> </li>
-          <li> <a href="faq.html">FAQ</a> </li>
-          <li> <a class="active" href="book_now.html">Book Now</a> </li>
-          <li> <a href="contact_us.html">Contact Us</a> </li>
+          <li> <a data-translate_key="home_tab" href="index.html"> Home </a> </li>
+          <li> <a data-translate_key="about_tab" href="about.html">About</a> </li>
+          <li> <a data-translate_key="tours_tab" href="tours.html">Tours</a> </li>
+          <li> <a data-translate_key="faq_tab" href="faq.html">FAQ</a> </li>
+          <li> <a class="active" data-translate_key="book_now_tab" href="book_now.html">Book Now</a> </li>
+          <li> <a data-translate_key="contact_us_tab" href="contact_us.html">Contact Us</a> </li>
         </ul>
       </nav>
     </header>
 
     <div class="container">
       <div class="book_now_container">
-        <h1>Book Now</h1>
-
+<!--         <h1 data-translate_key="book_now_h1_1" >Book Now</h1>
+ -->
+        <h2 data-translate_key="book_now_h2_1" >We are still setting up an online booking tool.  For now, please just let us know what you are interested and we will contact you right away about our availability</h2>
         <br><br>
 
-        <h2>We are still setting up an online booking tool.  For now, please just let us know what you are interested and we will contact you right away about our availability</h2>
 
-        <br>
+        <div id="wufoo-m7x4z5">
+        Fill out my <a href="http://pbtsf.wufoo.com/forms/m7x4z5">online form</a>.
+        </div>
+        <script type="text/javascript">var m7x4z5;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'pbtsf', 
+        'formHash':'m7x4z5', 
+        'autoResize':true,
+        'height':'974',
+        'async':true,
+        'header':'show'};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { m7x4z5 = new WufooForm();m7x4z5.initialize(options);m7x4z5.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');</script>
 
-        <iframe src="https://docs.google.com/forms/d/1CSo50sQdqTgvsqwxRo6uIxFVSApkJowQl9VB53ewVss/viewform?embedded=true" width="800" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+  <br>
 
       </div>
     </div>
@@ -63,29 +85,29 @@
 
       <nav>
         <ul>
-          <li> <a href="home.html"> Home </a> </li>
-          <li> <a href="about.html">About</a> </li>
-          <li> <a href="tours.html">Tours</a> </li>
-          <li> <a href="faq.html">FAQ</a> </li>
-          <li> <a class="active" href="book_now.html">Book Now</a> </li>
-          <li> <a href="contact_us.html">Contact Us</a> </li>
+          <li> <a data-translate_key="home_tab" href="index.html"> Home </a> </li>
+          <li> <a data-translate_key="about_tab" href="about.html">About</a> </li>
+          <li> <a data-translate_key="tours_tab" href="tours.html">Tours</a> </li>
+          <li> <a data-translate_key="faq_tab" href="faq.html">FAQ</a> </li>
+          <li> <a class="active" data-translate_key="book_now_tab" href="book_now.html">Book Now</a> </li>
+          <li> <a data-translate_key="contact_us_tab" href="contact_us.html">Contact Us</a> </li>
         </ul>
       </nav>
 
       <div class="first_header">
         <div class="added_info">
           <div class=" entry translate">
-            <div class="flag"> 
-              <img src="images/american_flag.jpg" height="35px" width="68px" >
+            <div class="flag" data-lang="eng"> 
+              <img  src="images/american_flag.jpg" height="35px" width="68px" >
             </div>
-            <div class="flag"> 
-              <img src="images/sweden.gif" height="35px" width="68px">
+            <div class="flag" data-lang="swe"> 
+              <img  src="images/sweden.gif" height="35px" width="68px">
             </div>
-            <div class="flag">
-              <img src="images/italy.jpg" height="35px" width="68px">
+            <div class="flag" data-lang="ity">
+              <img  src="images/italy.jpg" height="35px" width="68px">
             </div>
           </div>
-          <div class="entry quick_contact"> Give us a call! (415)955-7699 
+          <div data-translate_key="quick_contact" class="entry quick_contact"> Give us a call! (415)955-7699 
           </div>
         </div>
       </div>
@@ -94,6 +116,11 @@
 
 
 
-  </body>
+    <script src="js/cookie.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/library.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/app.js"></script>
+</body>
 
 </html>
