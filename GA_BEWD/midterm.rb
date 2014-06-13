@@ -12,8 +12,8 @@
 # Feel free to get creative! If there are any special features of your application 
 # that you would like to point out, please write about them in the README.
 
-require 'rubygems'
-require 'twilio-ruby'
+require "rubygems"
+require "twilio-ruby"
 require 'pry'
 
 account_sid =  'AC0fb531876178fe787e028a7e0e44fcf0'
