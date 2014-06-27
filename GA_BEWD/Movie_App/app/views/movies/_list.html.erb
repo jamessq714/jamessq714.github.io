@@ -1,0 +1,5 @@
+<ul>
+	<% @movies.each do |n|%>
+		<li><%= link_to n.title, movie_path(n) %></li>
+	<%end%>
+</ul>

@@ -1,0 +1,10 @@
+<!-- * Visitors can view a story's upvotes, category and link to more details by clicking on the title from the front page.
+ -->
+
+ <h1><%= "Title: #{@story.title}" %></h1> 
+<p><%= "Upvotes: #{@story.upvotes}" %></p> 
+<p><%= "Category: #{@story.category}" %></p> 
+<p><%= link_to "More details", @story.link  %></p> 
+
+
+<%= link_to "Home", root_path %>

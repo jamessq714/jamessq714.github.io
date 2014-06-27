@@ -1,0 +1,33 @@
+<% if @movie.errors.any? %>
+  <h2> There was an error in saving your story</h2>
+  <ul>
+    <% @movie.errors.full_messages.each do |m| %>
+      <li><%= m %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for(@movie) do |f| %>
+
+  <fieldset>
+    <div class="field">
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :description %><br>
+      <%= f.text_field :description %>
+    </div>
+    <div class="field">
+      <%= f.label :year_released %><br>
+      <%= f.text_field :year_released %>
+    </div>
+    <div class="actions">
+    </div>
+  </fieldset>
+  <%= f.submit %>
+<% end %>
+
+
+
+

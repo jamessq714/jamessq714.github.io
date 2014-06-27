@@ -1,0 +1,5 @@
+<ul>
+	<% @story.each do |n|%>
+		<li><%= link_to n.title, story_path(n) %></li>
+	<%end%>
+</ul>

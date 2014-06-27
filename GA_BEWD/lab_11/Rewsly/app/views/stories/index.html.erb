@@ -1,0 +1,13 @@
+<h1>Welcome to Rewsly</h1>
+
+<p><%= flash[:notice] %></p>
+
+<%= form_tag "/", method: "GET" do %>
+	<%= text_field_tag :q %>
+	<%= submit_tag  "Search"%>
+<% end %>
+
+<%= render "list" %>
+
+
+<h3><%= link_to "Add New story", new_story_path %></h3>

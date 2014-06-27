@@ -1,0 +1,22 @@
+	<%# %>
+
+<% if @url.errors.any? %>
+	<h2> There was an error in saving your url</h2>
+	<ul>
+		<% @url.errors.full_messages.each do |m| %>
+			<li><%= m %></li>
+		<% end %>
+	</ul>
+<% end %>
+
+
+<%= form_for @url do |f| %>
+	<fieldset>
+		<div class='fields'> 
+			<%= f.label :link, "URL To Shorten:" %>
+			<%= f.url_field :link %>
+		</div>	
+		
+	</fieldset>
+	<%= f.submit "Creat URL"%>
+<% end %>
